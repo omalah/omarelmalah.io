@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+    <header>
+        <title>Home</title>
+        <link href="css/style.css" rel="stylesheet">
+        <meta name="viewport" content="width-device-width, initial-scale-1, shrink-to-fit=no">
+        <meta name="name" content="Home">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </header>
+
+    <body>
+        <script>
+            function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+const numb = document.querySelector(".number");
+let counter = 0;
+setInterval(() => {
+  if(counter == 100 ){
+    clearInterval();
+  }else{
+    counter+=1;
+    numb.textContent = counter + "%";
+  }
+}, 80);
+        </script>
+        <div class="topnav">
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+              <div class="logo"><img class="logo" src="images/logo1.png" alt="logo"></div>
+          </div>
+          
+        <div class="head">
+            <div class="text">
+                <h1>Hi, I'm Omar El Malah</h1>
+                <h3>
+                    I am an Egyptian mechatronics engineering student. I design 3d products and websites.
+                </h3>
+                <a href="#about" class="learnmore">Learn more</a>
+            </div>
+            <div class="mypic">
+                <img src="images/me.png" alt="Home Wallpaper">
+            </div>
+        </div>
+        <hr>
+        <div id="about">
+            
+                <h2>About Malah</h2>
+                <p>I am a mechatronics engineering student. I have little experience in 3D designs and web designing. 
+                    I have basicknowledge in different programming languages.</p>
+                    <div class="skills">
+                        <h3>My Skills:</h3>
+                        <label>Team Leadership</label>
+                        <progress value="99" max="100">99%</progress><br>
+                        <label>Web designing</label>
+                        <progress value="75" max="100">75%</progress><br>
+                        <label>3D designing</label>
+                        <progress value="80" max="100">80%</progress><br>
+                        <label>Robotics with arduino</label>
+                        <progress value="85" max="100">85%</progress><br>
+                    </div>
+                <div class="cv">
+                    <img id="cv" src="images/Black Professional Resume.png" alt="my CV">
+                    <a href="images/Omar El Sayed CV.pdf">Open CV</a>
+                </div>
+        </div>
+        <hr>
+        <div id="projects">
+            <h2>My Projects</h2>
+            <div class="threedprojects">
+                <img src="images/gear.png" alt="3d gear">
+                <p><a href="3dprojects.html">3D Designs</a></p>
+            </div>
+            <div class="webprojects">
+                <img src="images/web.png" alt="web icon">
+                <p><a href="webprojects.html">Web Designs</a></p>
+            </div>
+        </div>
+        <hr>
+        <div id="contact">
+            <div class="contactdetails">
+                <h2>Contact Details</h2>
+                <p class="email">Email: <a href="mailto:omarelsayed5469@gmail.com">omarelsayed5469@gmail.com</a></p>
+                <p>Phone number: +201159555732</p>
+                <a href="https://www.facebook.com/omar.elsayed.2000"><img src="images/fbicon.png" alt="facebook icon"></a>
+                <a href="https://instagram.com/o.web_designer?igshid=1fwyi5crbcwuk"><img src="images/instagram.png" alt="instagrem icon"></a>
+                <a href="https://twitter.com/omarelsayed5469?s=08"><img src="images/twitter.png" alt="twitter icon"></a>
+                <a href="https://www.linkedin.com/in/omar-el-sayed-8638131b3"><img src="images/linkedin.png" alt="linkedin icon"></a>
+            </div>
+            <div class="container">
+                <form action="action_page.php">
+              
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+              
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              
+                  <input type="submit" value="Submit">
+              
+                </form>
+              </div>
+        </div>
+    </body>
+
+    <footer>
+        <hr>
+        <code>copyright (c) 2021 Omar El Malah</code>
+    </footer>
+</html>
